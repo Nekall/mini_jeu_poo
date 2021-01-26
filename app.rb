@@ -2,6 +2,7 @@ require 'pry'
 
 require_relative 'lib/game'
 require_relative 'lib/player'
+
 #Creation des joueurs
 player1 = Player.new("Josiane")
 player2 = Player.new("José")
