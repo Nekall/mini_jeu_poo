@@ -43,10 +43,9 @@ class HumanPlayer < Player
 
 #Métode de creation d'un joueur humain avec 100 points de vie et une arme de lvl1
   def initialize(name)
-    @life_points = (@life_points.to_i + 90)
+    @life_points = 100
     @weapon_level = 1
-
-    super(name)
+    @name= name
   end
 #Méthode pour affichez les stats d'un joueur humain
   def show_state
