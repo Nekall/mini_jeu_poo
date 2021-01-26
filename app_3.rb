@@ -1,14 +1,12 @@
 require 'pry'
 
+require_relative 'lib/welcome'
 require_relative 'lib/game'
 require_relative 'lib/player'
 
+
 #Accueil du jeu
-puts "------------------------------------------------"
-puts "|Bienvenue sur 'ILS VEULENT TOUS MA POO' !      |"
-puts "|Le but du jeu est d'être le dernier survivant !|"
-puts "-------------------------------------------------"
-puts " "
+
 
 #Creation de l'human-player
 puts "Entre ton pseudo :"
