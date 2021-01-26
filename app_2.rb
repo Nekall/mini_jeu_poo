@@ -17,11 +17,11 @@ player_name = gets.chomp
 player0 = HumanPlayer.new(player_name)
 
 #Creation d'un array d'ennemies
-enemies = []
+@@enemies = []
 
 #Creation des joueurs
-enemies << player1 = Player.new("Josiane")
-enemies << player2 = Player.new("José")
+@@enemies << player1 = Player.new("Josiane")
+@@enemies << player2 = Player.new("José")
 
 #Combats jusqu'a la mort, condition = mort de l'human-player ou des 2 bots
 while((player1.life_points != 0 and player2.life_points != 0) or player0.life_points != 0)
@@ -59,7 +59,7 @@ print ">"
   puts " "
   puts "Les autres joueurs t'attaquent !"
 
-  enemies.each do |current_player|
+  @@enemies.each do |current_player|
     if(current_player.life_points != 0)
       then current_player.attacks(player0)
     end
