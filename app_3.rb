@@ -18,7 +18,7 @@ my_game = Game.new(player_name)
 
 while true
   #Check si des ennemies sont en vie
-  if(my_game.is_still_ongoing?) == false then my_game.end
+  if(my_game.is_still_ongoing?) == false then break
   end
 
   #Voir l'état actuel des joueurs
@@ -31,13 +31,14 @@ while true
   my_game.menu_choice
 
   #Check si des ennemies sont en vie
-  if(my_game.is_still_ongoing?) == false then my_game.end
+  if(my_game.is_still_ongoing?) == false then break
   end
 
   #Les ennemis attaques
   my_game.enemies_attack
 end
 
+my_game.end
 
 #binding.pry
 #puts "C'est la fin !"

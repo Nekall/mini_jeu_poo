@@ -1,6 +1,7 @@
 require 'pry'
 
-puts "                     CECI EST UN TITRE"
+puts "                     ~The Hero Projet"
+puts "                         e-Donjon edition~ "
 puts "              />"
 puts " (           //-------------------------------------("
 puts "(*)OXOXOXOXO(*>======================================\\"
@@ -55,6 +56,9 @@ sleep(0.2)
 print " Bienvenue aventurier⸱ère\r"
 sleep(0.5)
 puts " "
-print "Tu dois sortir vivant⸱e de ce Donjon !"
+print "Tu dois sortir vivant⸱e de ce e-Donjon !"
 puts " "
-print "Mais tout d'abord, comment te fais-tu appeler ?"
+sleep(0.2)
+print "Mais tout d'abord, comment te fais-tu appeler ? "
+puts " "
+sleep(0.2)
