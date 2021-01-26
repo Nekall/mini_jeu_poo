@@ -50,6 +50,7 @@ class HumanPlayer < Player
 #Méthode pour affichez les stats d'un joueur humain
   def show_state
     puts "#{@name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level}"
+    puts ("█" * (@life_points/10)).ljust(10, "░")
   end
 #Damage avec boost du lvl de l'arme
   def compute_damage
@@ -71,13 +72,13 @@ class HumanPlayer < Player
     if(health_kit_found == 1) then puts "Tu n'as rien trouvé..."
     end
     if(health_kit_found >= 2 and health_kit_found <= 5)
-      then puts "Bravo, tu as trouvé un pack de +50 points de vie !"
+      then puts "Bravo, tu as trouvé un pack de ✙ 50 points de vie ! "
         @life_points = @life_points + 50
         if(@life_points > 100) then @life_points = 100
         end
     end
     if(health_kit_found == 6)
-      then puts "Waow, tu as trouvé un pack de +80 points de vie !"
+      then puts "Waow, tu as trouvé un pack de ✙ 80 points de vie !"
         @life_points = @life_points + 80
         if(@life_points > 100) then @life_points = 100
         end
